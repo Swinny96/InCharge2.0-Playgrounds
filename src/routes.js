@@ -109,11 +109,11 @@ import ProtectedPage from "./pages/protected/ProtectedPage";
 const routes = [
   {
     path: "/",
-    element: <DashboardLayout />,
+    element: <AuthLayout />,
     children: [
       {
         path: "",
-        element: <Default />,
+        element: <SignIn />,
       },
     ],
   },

@@ -210,7 +210,15 @@ body[data-theme=dark] {
 }
 
 .settings-scheme-theme-incharge {
-  background-image: linear-gradient(-45deg, $primary 50%, darken($static-gray-100, 2%) 50%);
+  background: $incharge-primary;
+}
+
+.settings-scheme-theme-ee {
+  background: $ee-primary;
+}
+
+.settings-scheme-theme-bt {
+  background: $bt-primary;
 }
 
 .settings-scheme-theme-dark {

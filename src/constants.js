@@ -63,3 +63,20 @@ export const THEME_PALETTE_DARK = {
   "gray-900": "#eaeaec",
   black: "#fff",
 };
+
+export const THEME_PALETTE_INCHARGE = {
+  ...THEME_PALETTE_LIGHT,
+  "primary-dark": "#84aef2",
+  "primary-light": "#1659c7",
+  white: "#293042",
+  "gray-100": "#3e4555",
+  "gray-200": "#545968",
+  "gray-300": "#696e7b",
+  "gray-400": "#7f838e",
+  "gray-500": "#9498a1",
+  "gray-600": "#a9acb3",
+  "gray-700": "#bfc1c6",
+  "gray-800": "#d4d6d9",
+  "gray-900": "#eaeaec",
+  black: "#fff",
+};

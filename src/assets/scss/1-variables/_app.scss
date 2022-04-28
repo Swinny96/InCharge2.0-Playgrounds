@@ -87,6 +87,49 @@ $danger:        $red !default;
 $light:         lighten($gray-200, 4%) !default;
 $dark:          #293042 !default;
 
+// InCharge Theme
+
+// Brand Colours
+
+$incharge-primary: #2D6BCF!default;
+$incharge-secondary: #0A2D66!default;
+$incharge-background1: #EAF0FA!default;
+$incharge-background2: linear-gradient(0deg, rgba(45, 107, 207, 0.05), rgba(45, 107, 207, 0.05)), #FFFFFF!default;
+$incharge-background3:  linear-gradient(0deg, rgba(45, 107, 207, 0.02), rgba(45, 107, 207, 0.02)), #FFFFFF!default;
+
+// State Colours
+
+$incharge-info: #3F80EA!default;
+$incharge-success: #4BBF73!default;
+$incharge-warning: #E5A54B!default;
+$incharge-error: #D9534F!default;
+
+// Grey Colours
+
+$incharge-black: #000000!default;
+$incharge-grey1: #32373B!default;
+$incharge-grey2: #414D45!default;
+$incharge-grey3: #6C757D!default;
+$incharge-grey4: #CED4DA!default;
+$incharge-grey5: #E9ECEF!default;
+$incharge-white: #FFFFFF!default;
+
+// EE Theme
+
+$ee-primary: #009C9C!default;
+$ee-secondary: #FFE805!default;
+$ee-background1: #F4F4F4!default;
+$ee-background2: linear-gradient(0deg, rgba(0, 156, 156, 0.05), rgba(0, 156, 156, 0.05)), #FFFFFF!default;
+$ee-background3:  linear-gradient(0deg, rgba(244, 244, 244, 0.02), rgba(244, 244, 244, 0.02)), #FFFFFF!default;
+
+// BT Theme
+
+$bt-primary: #6400aa!default;
+$bt-secondary: #0A2D66!default;
+$bt-background1: #EAF0FA!default;
+$bt-background2: linear-gradient(0deg, rgba(45, 107, 207, 0.05), rgba(45, 107, 207, 0.05)), #FFFFFF!default;
+$bt-background3:  linear-gradient(0deg, rgba(45, 107, 207, 0.02), rgba(45, 107, 207, 0.02)), #FFFFFF!default;
+
 $theme-colors: (
 	"primary": $primary,
 	"secondary": $secondary,
@@ -263,7 +306,7 @@ $sidebar-bg: (
   "colored": #2d6bcf,
   "dark": #293042,
   "light": $static-white,
-  "incharge": #2d6bcf,
+  "incharge": $incharge-primary,
   "ee": #2d6bcf,
   "bt": #2d6bcf,
 ) !default;
@@ -279,6 +322,8 @@ $sidebar-brand-icon-color: (
   "dark": lighten($primary, 2.5%),
   "light": darken($primary, 5%),
   "incharge": $static-white,
+  "ee": $static-white,
+  "bt": $static-white,
 ) !default;
 $sidebar-brand-icon-top-color: (
   "default": lighten($primary, 12.5%),
@@ -358,6 +403,8 @@ $sidebar-link-child-color: (
   "dark": $static-gray-500,
   "light": $static-gray-600,
   "incharge": $static-gray-400,
+  "ee": $static-gray-400,
+  "bt": $static-gray-400,
 ) !default;
 $sidebar-link-child-hover-color: (
   "default": $static-gray-200,
@@ -365,6 +412,8 @@ $sidebar-link-child-hover-color: (
   "dark": $static-gray-200,
   "light": #{lighten($primary, 5)},
   "incharge": $static-gray-100,
+  "ee": $static-gray-100,
+  "bt": $static-gray-100,
 ) !default;
 $sidebar-link-child-active-color: (
   "default": #{lighten($primary, 5)},
@@ -372,6 +421,8 @@ $sidebar-link-child-active-color: (
   "dark": #{lighten($primary, 5)},
   "light": #{lighten($primary, 5)},
   "incharge": $white,
+  "ee": $white,
+  "bt": $white,
 ) !default;
 
 // Sidebar child link nested
@@ -385,6 +436,8 @@ $sidebar-link-icon-color: (
   "dark": #{rgba($static-gray-200, 0.5)},
   "light": $static-gray-700,
   "incharge": #{rgba($static-gray-100, 0.5)},
+  "ee": #{rgba($static-gray-100, 0.5)},
+  "bt": #{rgba($static-gray-100, 0.5)},
 ) !default;
 $sidebar-link-icon-hover-color: (
   "default": #{rgba($static-gray-200, 0.75)},
@@ -392,6 +445,8 @@ $sidebar-link-icon-hover-color: (
   "dark": #{rgba($static-gray-200, 0.75)},
   "light": #{lighten($primary, 5)},
   "incharge": #{rgba($static-gray-100, 0.75)},
+  "ee": #{rgba($static-gray-100, 0.75)},
+  "bt": #{rgba($static-gray-100, 0.75)},
 ) !default;
 $sidebar-link-icon-active-color: (
   "default": $static-gray-200,
@@ -399,6 +454,8 @@ $sidebar-link-icon-active-color: (
   "dark": $static-gray-200,
   "light": #{lighten($primary, 5)},
   "incharge": $static-gray-100,
+  "ee": $static-gray-100,
+  "bt": $static-gray-100,
 ) !default;
 
 // Sidebar badges
@@ -408,6 +465,8 @@ $sidebar-badge-primary-color: (
   "dark": $static-white,
   "light": $static-white,
   "incharge": $dark,
+  "ee": $dark,
+  "bt": $dark,
 ) !default;
 $sidebar-badge-primary-bg: (
   "default": $primary,
@@ -415,6 +474,8 @@ $sidebar-badge-primary-bg: (
   "dark": $primary,
   "light": $primary,
   "incharge": $static-white,
+  "ee": $static-white,
+  "bt": $static-white,
 ) !default;
 
 $sidebar-badge-secondary-color: (
@@ -423,6 +484,8 @@ $sidebar-badge-secondary-color: (
   "dark": $static-white,
   "light": $static-white,
   "incharge": $static-dark,
+  "ee": $static-dark,
+  "bt": $static-dark,
 ) !default;
 $sidebar-badge-secondary-bg: (
   "default": $static-gray-600,
@@ -430,6 +493,8 @@ $sidebar-badge-secondary-bg: (
   "dark": $static-gray-600,
   "light": $static-gray-600,
   "incharge": rgba($static-white, 0.75),
+  "ee": rgba($static-white, 0.75),
+  "bt": rgba($static-white, 0.75),
 ) !default;
 
 // Sidebar compact
@@ -459,6 +524,8 @@ $sidebar-cta-color: (
   "dark": $static-gray-200,
   "light": $static-gray-800,
   "incharge": $static-gray-200,
+  "ee": $static-gray-200,
+  "bt": $static-gray-200,
 ) !default;
 
 $sidebar-cta-bg: (
@@ -466,7 +533,9 @@ $sidebar-cta-bg: (
   "colored": #{lighten(#2d6bcf, 3%)},
   "dark": #{lighten(#293042, 5%)},
   "light": #{darken($static-white, 3%)},
-  "incharge": #{lighten(#2d6bcf, 3%)},
+  "incharge": #{lighten($incharge-primary, 3%)},
+  "ee": #{lighten(#2d6bcf, 3%)},
+  "bt": #{lighten(#2d6bcf, 3%)},
 ) !default;
 
 $sidebar-cta-padding: $spacer*1.5 !default;

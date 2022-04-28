@@ -10,7 +10,7 @@ function useSettingsState(key, initialValue) {
 
     // Replace style sheet if dark theme gets toggled
     if (key === "theme") {
-      const theme = value === "dark" ? "dark" : "light";
+      const theme = value === "incharge" ? "incharge" : "light";
       const stylesheet = document.querySelector(".js-stylesheet");
       stylesheet.setAttribute("href", `/css/${theme}.css`);
     }
