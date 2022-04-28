@@ -7,13 +7,9 @@ import React from "react";
 import AuthLayout from "./layouts/Auth";
 import DashboardLayout from "./layouts/Dashboard";
 import DocLayout from "./layouts/Doc";
-import LandingLayout from "./layouts/Landing";
 
 // Guards
 import AuthGuard from "./components/guards/AuthGuard";
-
-// Landing
-import Landing from "./pages/landing/Landing";
 
 // Dashboards
 import Default from "./pages/dashboards/Default";
@@ -113,11 +109,11 @@ import ProtectedPage from "./pages/protected/ProtectedPage";
 const routes = [
   {
     path: "/",
-    element: <LandingLayout />,
+    element: <DashboardLayout />,
     children: [
       {
         path: "",
-        element: <Landing />,
+        element: <Default />,
       },
     ],
   },

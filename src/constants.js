@@ -19,6 +19,10 @@ export const THEME = {
   COLORED: "colored",
   DARK: "dark",
   LIGHT: "light",
+  LIGHT2: "light",
+  INCHARGE: "incharge",
+  EE: "ee",
+  BT: "bt",
 };
 
 export const THEME_PALETTE_LIGHT = {

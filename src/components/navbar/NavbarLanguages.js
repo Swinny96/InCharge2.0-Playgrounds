@@ -2,14 +2,14 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { Dropdown } from "react-bootstrap";
 
-import usFlag from "../../assets/img/flags/us.png";
+import gbFlag from "../../assets/img/flags/gb-nir.png";
 import frFlag from "../../assets/img/flags/fr.png";
 import deFlag from "../../assets/img/flags/de.png";
 import nlFlag from "../../assets/img/flags/nl.png";
 
 const languageOptions = {
   en: {
-    icon: usFlag,
+    icon: gbFlag,
     name: "English",
   },
   fr: {

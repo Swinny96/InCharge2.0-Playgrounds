@@ -262,7 +262,10 @@ $sidebar-bg: (
   "default": #293042,
   "colored": #2d6bcf,
   "dark": #293042,
-  "light": $static-white
+  "light": $static-white,
+  "incharge": #2d6bcf,
+  "ee": #2d6bcf,
+  "bt": #2d6bcf,
 ) !default;
   
 // Sidebar brand
@@ -274,19 +277,26 @@ $sidebar-brand-icon-color: (
   "default": lighten($primary, 2.5%),
   "colored": $static-white,
   "dark": lighten($primary, 2.5%),
-  "light": darken($primary, 5%)
+  "light": darken($primary, 5%),
+  "incharge": $static-white,
 ) !default;
 $sidebar-brand-icon-top-color: (
   "default": lighten($primary, 12.5%),
   "colored": rgba($static-white, 0.66),
   "dark": lighten($primary, 12.5%),
-  "light": lighten($primary, 15%)
+  "light": lighten($primary, 15%),
+  "incharge": rgba($static-white, 0.66),
+  "ee": rgba($static-white, 0.66),
+  "bt": rgba($static-white, 0.66),
 ) !default;
 $sidebar-brand-color: (
   "default": $static-white,
   "colored": $static-white,
   "dark": $static-white,
-  "light": lighten($static-gray-800, 25%)
+  "light": lighten($static-gray-800, 25%),
+  "incharge": $static-white,
+  "ee": $static-white,
+  "bt": $static-white,
 ) !default;
 
 // Sidebar header
@@ -296,7 +306,10 @@ $sidebar-header-color: (
   "default": $static-gray-400,
   "colored": $static-gray-400,
   "dark": $static-gray-400,
-  "light": $static-gray-700
+  "light": $static-gray-700,
+  "incharge": $static-gray-400,
+  "ee": $static-gray-400,
+  "bt": $static-gray-400,
 ) !default;
 
 // Sidebar link
@@ -306,7 +319,10 @@ $sidebar-link-color: (
   "default": rgba($static-gray-200, 0.5),
   "colored": rgba($static-gray-100, 0.7),
   "dark": rgba($static-gray-200, 0.5),
-  "light": $static-gray-700
+  "light": $static-gray-700,
+  "incharge": rgba($static-gray-100, 0.7),
+  "ee": rgba($static-gray-100, 0.7),
+  "bt": rgba($static-gray-100, 0.7),
 ) !default;
 
 $sidebar-link-hover-font-weight: $font-weight-normal !default;
@@ -314,7 +330,10 @@ $sidebar-link-hover-color: (
   "default": #{rgba($static-gray-200, 0.75)},
   "colored": #{rgba($static-gray-100, 0.9)},
   "dark": #{rgba($static-gray-200, 0.75)},
-  "light": #{lighten($primary, 5)}
+  "light": #{lighten($primary, 5)},
+  "incharge": #{rgba($static-gray-100, 0.9)},
+  "ee": #{rgba($static-gray-100, 0.9)},
+  "bt": #{rgba($static-gray-100, 0.9)},
 ) !default;
 
 $sidebar-link-active-font-weight: $font-weight-normal !default;
@@ -322,7 +341,10 @@ $sidebar-link-active-color: (
   "default": $static-gray-200,
   "colored": $static-gray-100,
   "dark": $static-gray-200,
-  "light": #{lighten($primary, 5)}
+  "light": #{lighten($primary, 5)},
+  "incharge": $static-gray-100,
+  "ee": $static-gray-100,
+  "bt": $static-gray-100,
 ) !default;
 
 // Sidebar child link
@@ -334,19 +356,22 @@ $sidebar-link-child-color: (
   "default": $static-gray-500,
   "colored": $static-gray-400,
   "dark": $static-gray-500,
-  "light": $static-gray-600
+  "light": $static-gray-600,
+  "incharge": $static-gray-400,
 ) !default;
 $sidebar-link-child-hover-color: (
   "default": $static-gray-200,
   "colored": $static-gray-100,
   "dark": $static-gray-200,
-  "light": #{lighten($primary, 5)}
+  "light": #{lighten($primary, 5)},
+  "incharge": $static-gray-100,
 ) !default;
 $sidebar-link-child-active-color: (
   "default": #{lighten($primary, 5)},
   "colored": $white,
   "dark": #{lighten($primary, 5)},
-  "light": #{lighten($primary, 5)}
+  "light": #{lighten($primary, 5)},
+  "incharge": $white,
 ) !default;
 
 // Sidebar child link nested
@@ -358,19 +383,22 @@ $sidebar-link-icon-color: (
   "default": #{rgba($static-gray-200, 0.5)},
   "colored": #{rgba($static-gray-100, 0.5)},
   "dark": #{rgba($static-gray-200, 0.5)},
-  "light": $static-gray-700
+  "light": $static-gray-700,
+  "incharge": #{rgba($static-gray-100, 0.5)},
 ) !default;
 $sidebar-link-icon-hover-color: (
   "default": #{rgba($static-gray-200, 0.75)},
   "colored": #{rgba($static-gray-100, 0.75)},
   "dark": #{rgba($static-gray-200, 0.75)},
-  "light": #{lighten($primary, 5)}
+  "light": #{lighten($primary, 5)},
+  "incharge": #{rgba($static-gray-100, 0.75)},
 ) !default;
 $sidebar-link-icon-active-color: (
   "default": $static-gray-200,
   "colored": $static-gray-100,
   "dark": $static-gray-200,
-  "light": #{lighten($primary, 5)}
+  "light": #{lighten($primary, 5)},
+  "incharge": $static-gray-100,
 ) !default;
 
 // Sidebar badges
@@ -378,26 +406,30 @@ $sidebar-badge-primary-color: (
   "default": $static-white,
   "colored": $dark,
   "dark": $static-white,
-  "light": $static-white
+  "light": $static-white,
+  "incharge": $dark,
 ) !default;
 $sidebar-badge-primary-bg: (
   "default": $primary,
   "colored": $static-white,
   "dark": $primary,
-  "light": $primary
+  "light": $primary,
+  "incharge": $static-white,
 ) !default;
 
 $sidebar-badge-secondary-color: (
   "default": $static-white,
   "colored": $static-dark,
   "dark": $static-white,
-  "light": $static-white
+  "light": $static-white,
+  "incharge": $static-dark,
 ) !default;
 $sidebar-badge-secondary-bg: (
   "default": $static-gray-600,
   "colored": rgba($static-white, 0.75),
   "dark": $static-gray-600,
-  "light": $static-gray-600
+  "light": $static-gray-600,
+  "incharge": rgba($static-white, 0.75),
 ) !default;
 
 // Sidebar compact
@@ -425,14 +457,16 @@ $sidebar-cta-color: (
   "default": $static-gray-200,
   "colored": $static-gray-200,
   "dark": $static-gray-200,
-  "light": $static-gray-800
+  "light": $static-gray-800,
+  "incharge": $static-gray-200,
 ) !default;
 
 $sidebar-cta-bg: (
   "default": #{lighten(#293042, 5%)},
   "colored": #{lighten(#2d6bcf, 3%)},
   "dark": #{lighten(#293042, 5%)},
-  "light": #{darken($static-white, 3%)}
+  "light": #{darken($static-white, 3%)},
+  "incharge": #{lighten(#2d6bcf, 3%)},
 ) !default;
 
 $sidebar-cta-padding: $spacer*1.5 !default;

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 
-import { Alert, Button } from "react-bootstrap";
+import { Alert } from "react-bootstrap";
 
 import { Sliders, BookOpen } from "react-feather";
 
@@ -32,6 +32,18 @@ const themeOptions = [
   {
     name: "Light",
     value: THEME.LIGHT,
+  },
+  {
+    name: "InCharge",
+    value: THEME.INCHARGE,
+  },
+  {
+    name: "EE",
+    value: THEME.EE,
+  },
+  {
+    name: "BT",
+    value: THEME.BT,
   },
 ];
 
@@ -244,20 +256,6 @@ const Settings = () => {
                   </label>
                 ))}
               </div>
-            </div>
-          </div>
-          <div className="settings-footer">
-            <div className="d-grid">
-              <Button
-                as="a"
-                rel="noreferrer"
-                href="https://themes.getbootstrap.com/product/appstack-react-admin-dashboard-template/"
-                target="_blank"
-                variant="primary"
-                size="lg"
-              >
-                Purchase
-              </Button>
             </div>
           </div>
         </div>
